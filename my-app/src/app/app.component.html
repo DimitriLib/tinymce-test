@@ -1,0 +1,15 @@
+<div>Test</div>
+<editor
+  [(ngModel)]="value"
+  class="rich-text-editor"
+  [disabled]="true"
+  [init]="{readonly: true,  base_url: '/tinymce'}"
+></editor>
+<div   [formGroup]="formGroup">
+  <editor
+    class="rich-text-editor"
+    formControlName="richText"
+    [disabled]="true"
+    [init]="{readonly: true,  base_url: '/tinymce'}"
+  ></editor>
+</div>
